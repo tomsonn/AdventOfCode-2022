@@ -16,7 +16,7 @@ def split_calories(calories_list: list) -> list:
 
 
 def main() -> None:
-    content = [value.strip() for value in read_file_data()]
+    content = [value.strip() for value in read_file_data('input.txt')]
     calories_split = split_calories(content)
     calories_sum_by_elf = [sum(chunk) for chunk in calories_split]
 
