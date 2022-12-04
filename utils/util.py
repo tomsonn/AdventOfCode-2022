@@ -2,7 +2,7 @@ import os
 import sys
 
 
-def read_file_data(file_path: str) -> list:
+def read_file_data(file_path: str = 'input.txt') -> list:
 
     dir_path = '/'.join(sys.argv[0].split('/')[:-1])
     full_path = f'{dir_path}/{file_path}'
